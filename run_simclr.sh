@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source activate py37
+# source activate py37
 # dataset=mmwhs
 dataset=hippo
 

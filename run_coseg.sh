@@ -24,6 +24,6 @@ python main_coseg.py  --batch_size ${batch} --dataset ${dataset} \
     --print_freq 10 \
     --temp ${temp} \
     --train_sample ${train_sample} \
-    --pretrained_model_path save/simclr/Hippocampus/b_80_model.pth \
+    --pretrained_model_path save/simclr/Hippocampus/b_120_model.pth \
     # --pretrained_model_path save/simclr/Hippocampus/b_80_model.pth \
 
