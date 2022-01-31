@@ -39,7 +39,8 @@ class NTXentLoss(torch.nn.Module):
         # x shape: (N, 1, C)
         # y shape: (1, 2N, C)
         # v shape: (N, 2N)
-        v = self._cosine_similarity(x.unsqueeze(1), y.unsqueeze(0))
+        # v = self._cosine_similarity(x.unsqueeze(1), y.unsqueeze(0))
+        v = torch.matmul(x, y.T)
         return v
 
     def forward(self, zis, zjs):

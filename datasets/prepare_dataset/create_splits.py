@@ -1,5 +1,5 @@
 import pickle
-from utilities.file_and_folder_operations import subfiles
+from batchgenerators.utilities.file_and_folder_operations import subfiles
 
 import os
 import numpy as np

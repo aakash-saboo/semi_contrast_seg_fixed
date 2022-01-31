@@ -37,9 +37,14 @@ def preprocess_data(root_dir):
 
             print(label.max())
             print(label.min())
+
+
+            image = image.transpose((0, 2, 1))
+            label  = label.transpose((0, 2, 1))
+
             total += image.shape[2]
 
-            image = image[:, :, 0].transpose((0, 2, 1))
+            # image = image[:, :, 0].transpose((0, 2, 1))
 
             """
             # modify the label for MMWHS dataset
